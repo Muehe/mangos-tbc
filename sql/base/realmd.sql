@@ -21,7 +21,9 @@
 
 DROP TABLE IF EXISTS `realmd_db_version`;
 CREATE TABLE `realmd_db_version` (
-  `required_s2367_01_realmd_totp` bit(1) DEFAULT NULL
+  `required_13970_01_realmd_totp` bit(1) DEFAULT NULL,
+  `required_s2367_01_realmd_totp` bit(1) DEFAULT NULL,
+  `required_z2716_01_realmd_totp` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Last applied sql update to DB';
 
 --
@@ -174,7 +176,9 @@ CREATE TABLE `realmlist` (
 LOCK TABLES `realmlist` WRITE;
 /*!40000 ALTER TABLE `realmlist` DISABLE KEYS */;
 INSERT INTO `realmlist` VALUES
-(1,'MaNGOS','127.0.0.1',8085,1,0,1,0,0,'');
+(1,'CMaNGOS Classic','127.0.0.1',8085,1,0,1,0,0,''),
+(2,'CMaNGOS TBC','127.0.0.1',8086,1,0,1,0,0,''),
+(3,'CMaNGOS WotLK','127.0.0.1',8087,1,0,1,0,0,'');
 /*!40000 ALTER TABLE `realmlist` ENABLE KEYS */;
 UNLOCK TABLES;
 

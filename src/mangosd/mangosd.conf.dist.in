@@ -3,7 +3,7 @@
 #####################################
 
 [MangosdConf]
-ConfVersion=2018092101
+ConfVersion=2019012101
 
 ###################################################################################################################
 # CONNECTIONS AND DIRECTORIES
@@ -59,17 +59,17 @@ ConfVersion=2018092101
 #
 ###################################################################################################################
 
-RealmID = 1
+RealmID = 2
 DataDir = "."
 LogsDir = ""
-LoginDatabaseInfo     = "127.0.0.1;3306;mangos;mangos;tbcrealmd"
+LoginDatabaseInfo     = "127.0.0.1;3306;mangos;mangos;realmd"
 WorldDatabaseInfo     = "127.0.0.1;3306;mangos;mangos;tbcmangos"
 CharacterDatabaseInfo = "127.0.0.1;3306;mangos;mangos;tbccharacters"
 LoginDatabaseConnections = 1
 WorldDatabaseConnections = 1
 CharacterDatabaseConnections = 1
 MaxPingTime = 30
-WorldServerPort = 8085
+WorldServerPort = 8086
 BindIP = "0.0.0.0"
 
 # Log File for SD2-Errors
