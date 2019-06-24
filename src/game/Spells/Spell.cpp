@@ -2235,7 +2235,7 @@ void Spell::SetTargetMap(SpellEffectIndex effIndex, uint32 targetMode, bool targ
                 }
                 case 45339:
                 {
-                    for (auto iter = tempUnitList.begin(); iter != tempUnitList.end();)
+                    for (UnitList::const_iterator iter = tempUnitList.begin(); iter != tempUnitList.end();)
                     {
                         if ((*iter)->HasCharmer(m_caster->GetObjectGuid()))
                             iter = tempUnitList.erase(iter);
